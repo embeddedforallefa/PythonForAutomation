@@ -1,15 +1,16 @@
 def addToInventory(inventory, addedItems):
     iCount = 0
-    Items={}
+    items={}
     for i in addedItems:
-        Items = {i: 0}
-        if list(Items.keys())[0] in inventory:
-            Items = {i: (inventory[i]+1)}
-            inventory.update(Items)
+        items = {i: 0}
+        if list(items.keys())[0] in inventory:
+            items = {i: (inventory[i]+1)}
+            inventory.update(items)
         else:
-            Items = {i: iCount+1}
-            inventory.update(Items)
+            items = {i: iCount+1}
+            inventory.update(items)
     return inventory
+
 
 def displayInventory(inventory):
     print("Inventory:")
