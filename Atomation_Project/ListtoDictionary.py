@@ -22,6 +22,6 @@ def displayInventory(inventory):
 
 
 inv = {'gold coin': 42, 'rope': 1}
-dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby', 'ruby','dagger']
+dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby', 'ruby','dagger', 'apple']
 inv = addToInventory(inv, dragonLoot)
 displayInventory(inv)
